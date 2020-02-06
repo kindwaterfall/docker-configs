@@ -1,0 +1,7 @@
+FROM node:10
+WORKDIR /app
+COPY . ./app
+RUN npm install &&
+    npm run build
+FROM nginx:alpine
+COPY /app/dist/out /usr/share/nginx/html
