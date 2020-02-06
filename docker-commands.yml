@@ -1,0 +1,31 @@
+Docker Commands
+
+   - docker container ls -> show list docker container is running
+   - docker images ls -> show list all images in pull
+   - docker ps -a -> show all runnings containers and stopped containers
+   - docker container rm --force --> force remove running container
+   - docker container (start || stop) -> start or stop container
+   - docker run --> run container, but if you don't have image, docker automaticly pull image
+   - docker exec -it -> enter your running container with command (sh, bash, etc)
+   - docker network ls -> show all allow networks
+
+Dockerfile
+
+   - FROM -> pull image from your repository or docker hub
+   - WORKDIR -> directory where will be installed your application
+   - COPY -> copy from to
+   - RUN -> running command
+   - ENV -> environment variables
+   - ARG -> arguments from command line
+   - CMD -> run sh command
+   - EXPOSE -> expose port for your application
+   - VOLUME -> add volume for your application (your server or local machine have common storage)
+   - USER -> running container with user
+   - ENTRYPOINT -> enter command in container
+
+Docker Compose 
+
+   - services -> your containers
+   - networks
+   - volumes
+   - :version dockerfile

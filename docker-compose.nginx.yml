@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    user: root
+    ports:
+      - "80:80"
+      - "443:433"
